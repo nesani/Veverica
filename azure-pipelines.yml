@@ -23,7 +23,7 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: 'PowerShell/VersionUpdate.ps1'
+    filePath: 'VersionUpdate.ps1'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
