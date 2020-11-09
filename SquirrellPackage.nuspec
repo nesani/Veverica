@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NovaVeverica</id>
+    <version>1.0.4</version>
+    <title>Drama</title>
+    <authors>Nesani</authors>
+    <owners></owners>
+    <developmentDependency>true</developmentDependency>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>Images/Witchdrama.ico</icon>
+    <description>My package description.</description>
+  </metadata>
+  <files>
+    <file src="Veverica\bin\Release\*.dll" target="lib\net48" />
+    <file src="Veverica\bin\Release\*.exe" target="lib\net48" />
+    <file src="Veverica\bin\Release\*.config" target="lib\net48" />
+    <file src="Veverica\bin\Release\Utils\*.*" target="lib\net48\Utils" />
+  </files>
+</package>

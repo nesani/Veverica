@@ -8,3 +8,6 @@ $file = ".\AssemblyInfo.cs"
 $filecontent = Get-Content($file)
 attrib $file -r
 
+# Search in the "AssemblyInfo.cs" file items that matches the version regex and replace them with the
+# correct version number
+$filecontent -replace $VersionRegex, $NewVersion | Out-File $file
