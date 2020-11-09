@@ -4,7 +4,7 @@ $VersionRegex = "\d+\.\d+\.\d+\.\d+"
 $NewVersion = [regex]::matches($Env:BUILD_BUILDNUMBER,$VersionRegex)
 
 Write-Host "Updating version of the application to the build version: " $NewVersion
-$file = ".\SharedAssemblyInfo.cs" 
+$file = ".\AssemblyInfo.cs" 
 $filecontent = Get-Content($file)
 attrib $file -r
 
