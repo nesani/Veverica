@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veverica", "Veverica\Veveri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VevericaOnline", "VevericaOnline\VevericaOnline.csproj", "{1678BB0B-6D8C-4EF6-8E26-57C80D4400E2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerShell", "PowerShell", "{FB3531D5-9966-4409-9666-C7B17DC1C24E}"
+	ProjectSection(SolutionItems) = preProject
+		VersionUpdate.ps1 = VersionUpdate.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
