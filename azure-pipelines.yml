@@ -21,9 +21,7 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-- task: PowerShell@2
-  inputs:
-    filePath: 'VersionUpdate.ps1'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
