@@ -15,6 +15,5 @@
     <file src="Veverica\bin\Release\*.dll" target="lib\net48" />
     <file src="Veverica\bin\Release\*.exe" target="lib\net48" />
     <file src="Veverica\bin\Release\*.config" target="lib\net48" />
-    <file src="Veverica\bin\Release\Utils\*.*" target="lib\net48\Utils" />
   </files>
 </package>
