@@ -33,7 +33,8 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: '**/*.nuspec'
-    versioningScheme: 'byBuildNumber'
+    versioningScheme: 'off'
+    includeReferencedProjects: true
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
