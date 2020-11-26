@@ -50,4 +50,4 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: '$(System.TeamProject)-$(Build.BuildNumber)'
-    publishLocation: 'Container'
+    publishLocation: 'Filepath'
