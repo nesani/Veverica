@@ -51,3 +51,4 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: '$(System.TeamProject)-$(Build.BuildNumber)'
     publishLocation: 'Filepath'
+    TargetPath: 'C:\Artifact'
