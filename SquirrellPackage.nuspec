@@ -8,7 +8,7 @@
     <owners></owners>
     <developmentDependency>true</developmentDependency>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <icon>Images/Witchdrama.ico</icon>
+    <!--<icon>Images/Witchdrama.ico</icon>-->
     <description>My package description.</description>
   </metadata>
   <files>
