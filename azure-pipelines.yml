@@ -21,6 +21,14 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
@@ -35,13 +43,6 @@ steps:
       
       # correct version number
       $filecontent -replace $VersionRegex, $NewVersion | Out-File $file
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
