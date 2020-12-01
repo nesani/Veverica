@@ -21,6 +21,20 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      $VersionRegex = "\d+\.\d+\.\d+\.\d+"
+      $NewVersion = [regex]::matches($Env:BUILD_BUILDNUMBER,$VersionRegex)
+      
+      Write-Host "Updating version of the application to the build version: " $NewVersion
+      $file = ".\AssemblyInfo.cs" 
+      $filecontent = Get-Content($file)
+      attrib $file -r
+      
+      # correct version number
+      $filecontent -replace $VersionRegex, $NewVersion | Out-File $file
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
