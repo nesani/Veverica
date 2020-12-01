@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerShell", "PowerShell", "{FB3531D5-9966-4409-9666-C7B17DC1C24E}"
 	ProjectSection(SolutionItems) = preProject
 		SquirrellPackage.nuspec = SquirrellPackage.nuspec
+		Transformation.xml = Transformation.xml
 		VersionUpdate.ps1 = VersionUpdate.ps1
 	EndProjectSection
 EndProject

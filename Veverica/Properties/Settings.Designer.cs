@@ -23,15 +23,12 @@ namespace Veverica.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://localhost/Backend.Api/Downloads/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PlaceHolder")]
         public string UpdateUrl {
             get {
                 return ((string)(this["UpdateUrl"]));
-            }
-            set {
-                this["UpdateUrl"] = value;
             }
         }
     }
